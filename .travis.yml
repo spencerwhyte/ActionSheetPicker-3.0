@@ -6,5 +6,6 @@ notifications:
   email:
     recipients:
       - sky4winder+actionSheetPicker@gmail.com
+      - noorulain.ali89+actionSheetPicker@gmail.com
     on_success: never # [always|never|change]
     on_failure: change # [always|never|change]

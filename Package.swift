@@ -8,15 +8,21 @@ let package = Package(
     products: [
         .library(
             name: "ActionSheetPicker-3.0",
-            targets: ["CoreActionSheetPicker"]),
+            targets: ["CoreActionSheetPicker"]
+        ),
     ],
     targets: [
         .target(
             name: "CoreActionSheetPicker",
             dependencies: [],
             path: "CoreActionSheetPicker",
-            publicHeadersPath: "include"
-        )
+            sources: ["CoreActionSheetPicker.h"],
+            publicHeadersPath: "."
+        ),
+        .testTarget(
+            name: "CoreActionSheetPickerTests",
+            dependencies: []
+        ),
     ],
 
     swiftLanguageVersions: [.v5]
